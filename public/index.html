@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+		<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7U0maVngLjlJB3bdMXdOTb28BYMbT0lY&libraries=places"></script>
+		<script defer src="index.js"></script>
+		<title>JC Weather</title>
+	</head>
+	<body>
+		<h1 class="city">- -</h1>
+		<main class="temperature">
+			<section class="degree-section">
+				<img class="temp-icon" src="http://openweathermap.org/img/wn/50d@2x.png" alt="weather icon" />
+				<h2 class="temp-degree">-</h2>
+				<span class="temp-option">C°</span>
+				<span class="temp-option-small">↔ F°</span>
+			</section>
+			<data class="temp-feels"></data>
+			<data class="temp-description"></data>
+			<data class="wind-degree"></data>
+			<input type="text" class="city-search" placeholder="search location" />
+		</main>
+	</body>
+</html>
