@@ -1,7 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const fetch = require('node-fetch');
-const apiKey = 'f54131c0ac0c2bea6b2d4583dec60d10';
+const apiKey = process.env.WEATHER_API_KEY;
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
